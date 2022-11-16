@@ -1,0 +1,213 @@
+/* <img src="https://placekitten.com/478/229" alt="Placeholder cat"> */
+#infoVideojuego {
+    background-color: #0f0e17;
+}
+.trailerJuego iframe {
+    border: 0;
+    height: 50vh;
+    position: relative; 
+}
+.imgBanner {
+    background-image: url("https://placekitten.com/1970/1080");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(6px);
+    width: 100%;
+    height: 100%;
+}
+.bannerJuego {
+    margin-top: 70px;
+    height: 442px;
+    border-bottom: 3px solid #010101;
+}
+.gridJuego {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 70vw;
+    grid-template-rows: 352px 140px 450px;
+    gap: 0 20px;
+    
+}
+.juego {
+    /* background-color: #0f0e17; */
+    filter: blur(0px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 0 70px;
+    height: 942px;
+}
+.juego h2 {
+    font-size: 35px;
+    color: white;
+}
+.juego h3, .juego a{
+    grid-column: 1/2;
+    color: white;
+    opacity: .8;
+}
+.juego a {
+    font-style: italic;
+}
+.juego a:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+.coverJuego {
+    display: flex;
+    justify-content: center;
+    
+}
+.coverJuego img {
+    /* width: 200px; */
+    width: 250px;
+    height: 352px;
+    border: 3px solid #010101;
+}
+.resumen {
+    color: white;
+}
+.resumen p {
+    padding-bottom: 10px;
+}
+.caracteristicas, .caracteristicasMobile {
+    color: white;
+    padding: 10px 0;
+    border-top: 3px solid #010101;
+    /* padding: 10px 0; */
+}
+.caracteristicas ul, .caracteristicasMobile ul {
+    list-style: none;
+}
+.caracteristicas span , .caracteristicasMobile span{
+    opacity: .7;
+}
+.caracteristicas {
+    display: none;
+}
+.trailer {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+    color: white;    
+}
+.trailer h2 {
+    margin-bottom: 20px;
+}
+.trailer iframe {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+/* Protagonistas */
+.containerProtagonistas {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    padding-bottom: 20px;
+}
+.protas {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+}
+.prota img {
+    min-width: 250px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 160;
+    max-height: 200px;
+}
+@media screen and (min-width: 600px) {
+    .gridJuego {
+        grid-template-columns: 250px 35vw;
+        grid-template-rows: 250px 80px 200px;
+        bottom: 250px;
+        position: relative;
+        gap: 20px 50px;
+    }
+    .juego {
+        margin-bottom: -200px;
+        z-index: 0;
+        height: 700px;
+    }
+    .infoJuego {
+        width: 100%;
+    }
+    .juego h2 { 
+        font-size: 50px;
+    }
+    .juego h3 {
+        grid-column: 2/3;
+    }
+    .juego a {
+        grid-column: 2/3;
+    }
+    .resumen {
+        /* margin-left: 60px; */
+        padding-right: 30px;
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    .caracteristicas {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border: 0;
+        display: block;
+    }
+    .caracteristicasMobile {
+        display: none;
+    }
+    .coverJuego {
+        grid-row: 1/3;
+    }
+    .trailer {
+        width: 80%;
+        height: 500px;
+    }
+    .trailer iframe {
+        width: 100%;
+        height: 85%;
+    }
+    .protas {
+        grid-template-columns: 48% 48%;
+    }
+   
+} 
+@media screen and (min-width: 1100px) {
+    .juego {
+        height: 450px;
+    }
+    .gridJuego {
+        grid-template-columns: 250px 50vw;
+        grid-template-rows: 250px 80px 200px;
+        bottom: 250px;
+        position: relative;
+        gap: 20px 50px;
+    }
+    .trailer {
+        width: 80%;
+        height: 80vh;
+    }
+    .trailer iframe {
+        width: 100%;
+        height: 85%;
+    }
+    .protas {
+        grid-template-columns: 30% 30% 30%;
+    }
+   
+}
+
+/* #tlou {
+    background-image: url(../img/videojuegos/banners/TLoU1.webp);
+    background-size: cover;
+} */
